@@ -1,0 +1,54 @@
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 60px;
+  &_fs14 {
+    font-size: 14px;
+    line-height: 21px;
+    color: #e0e0e0;
+  }
+  &_fs16 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &_fs20 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  &_fs36 {
+    font-size: 36px;
+  }
+  &_fs48 {
+    font-size: 48px;
+  }
+
+  &__section-title {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    @include before_circle;
+    &:before {
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__section-subtitle {
+    text-align: center;
+  }
+}
+
+// body {
+//   font-family: 'Roboto', sans-serif;
+//   color: #E0E0E0;
+// }
+
+// h1, h2, h3 {
+//   color: #FFFFFF;
+// }
+
+// a, .highlight {
+//   color: #ADD8E6;
+// }

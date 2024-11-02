@@ -1,0 +1,37 @@
+.promo {
+  min-height: 100vh;
+  position: relative;
+  background: url("/img/bg.png") no-repeat 50% / cover;
+  padding-top: 205px;
+  &__title {
+    margin-top: 10px;
+    width: 535px;
+  }
+
+  &__subtitle {
+    position: relative;
+    padding-left: 10px;
+    @include before_circle;
+    z-index: 2;
+  }
+
+  &__btns {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+  }
+
+  &__link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+      transform: scale(1.1); /* Увеличение кнопки */
+    }
+  }
+}
